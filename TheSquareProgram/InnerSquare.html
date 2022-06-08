@@ -23,12 +23,12 @@
     </script>
 
     <div class="height">
-        <input id="sHeight" type="range" name="height" min="0.0" max="1.0" step="0.1" value="0.5" />
+        <input onchange="updateHeight(value)" id="sHeight" type="range" name="height" min="0.0" max="1.0" step="0.1" value="0.5" />
         <label for="height">Height</label>
     </div>
 
     <div class="width">
-        <input id="sWidth" type="range" name="width" min="0.0" max="1.0" step="0.1" value="0.5" />
+        <input onchange="updateWidth(value)" id="sWidth" type="range" name="width" min="0.0" max="1.0" step="0.1" value="0.5" />
         <label for="width">Width</label>
     </div>
 

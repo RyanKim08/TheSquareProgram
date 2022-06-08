@@ -1,16 +1,51 @@
-﻿"use strict";
+﻿/*
+ * Course: CS 4722
+ * Section: W01
+ * Name: Ryan Kim
+ * Professor: Alan Shaw
+ * Assignemnt 1: Exercise 1 - The Square Program
+ */
+
+"use strict";
 
 var gl;
 var points;
-var height = document.getElementById("sHeight");
-var width = document.getElementById("sWidth");
+var height = document.getElementById("sHeight").value;
+var width = document.getElementById("sWidth").value;
+//var outputHeight;
+//var outputWidth;
+console.log(height, width);
+
+function updateHeight(args) {
+    //document.getElementById("sHeight").value = args;
+    console.log(args);
+    height = args;
+    window.location.reload();
+}
+
+function updateWidth(args) {
+    //document.getElementById("sHeight").value = args;
+    console.log(args);
+    width = args;
+    window.location.reload();
+}
+
+/*height.oninput = function () {
+    outputHeight.innerHTML = this.value;
+    updateRect();
+}
+
+width.oninput = function () {
+    outputWidth.innerHTML = this.value;
+    updateRect();
+}*/
 
 // Four Vertices
 var vertices = [
-    vec2(-0.5, -0.5),
-    vec2(-0.5, 0.5),
-    vec2(0.5, 0.5),
-    vec2(0.5, -0.5)
+    vec2(-(width), -(height)),
+    vec2(-(width), (height)),
+    vec2(width, height),
+    vec2(width, -(height))
 ];
 
 window.onload = function init() {
