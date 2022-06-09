@@ -1,12 +1,4 @@
-﻿/*
- * Course: CS 4722
- * Section: W01
- * Name: Ryan Kim
- * Professor: Alan Shaw
- * Assignemnt 1: Exercise 1 - The Square Program
- */
-
-"use strict";
+﻿"use strict";
 
 var gl;
 var points;
